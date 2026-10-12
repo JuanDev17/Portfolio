@@ -33,7 +33,7 @@ jobs:
         run: npm ci
 
       - name: Build Angular
-        run: npm run build -- --base-href /
+        run: npm run build -- --base-href /juanbuilds.dev/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
