@@ -1,0 +1,108 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 12px;
+
+  a {
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero {
+  padding: 64px 0;
+
+  h1 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #2563eb;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+section:not(.hero) {
+  padding: 32px 0;
+}
+
+
+.project-card {
+  border: 1px solid #7e7e7e;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 24px;
+  width: 50%;
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+
+  a {
+    font-size: 14px;
+    color: #2563eb;
+    text-decoration: none;
+  }
+}
+
+.enhancement-card {
+      border: 1px solid #7e7e7e;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 24px;
+  width: 75%;
+  
+  mat-icon {
+    color: #2563eb;
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+    margin-bottom: 12px;
+  }
+}
+
+.card-design {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+    gap: 8px;
+}

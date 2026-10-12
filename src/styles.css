@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #2563eb;
+  --background: #dad7cd;
+  --text: #0f172a;
+  --text-secondary: #475569;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
