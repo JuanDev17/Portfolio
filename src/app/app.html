@@ -120,6 +120,7 @@
   }
 
  
+
 <!-- Projects Section -->
 @if (activeSelection() === 'projects') {
   <section id="projects" class="projects">
@@ -158,111 +159,193 @@
         </a>
       </div>
 
-    
-<div class="demo-gallery">
+      <!-- Application Demonstration -->
+      <div class="project-demo">
+        <h3>Application Demonstration</h3>
 
-  <!-- Database -->
-  <figure>
-<img
-  src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/database.png"
-  alt="PostgreSQL database records"
-  loading="lazy"
-/>
-    <figcaption>
-      PostgreSQL - Contact records stored in the database.
-    </figcaption>
-  </figure>
+        <p>
+          The following screenshots demonstrate how the Contact
+          Management application handles CRUD operations, stores
+          contact information in PostgreSQL, and validates
+          application functionality.
+        </p>
 
-  <!-- Get All -->
-  <figure>
-    <img
-      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/getAll.png"
-      alt="Postman GET all contacts request"
-      loading="lazy"
-    />
-    <figcaption>
-      GET - Retrieving all contacts from PostgreSQL.
-    </figcaption>
-  </figure>
+        <div class="demo-gallery">
 
-  <!-- Get By ID -->
-  <figure>
-    <img
-      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/getById.png"
-      alt="Postman GET contact by ID"
-      loading="lazy"
-    />
-    <figcaption>
-      GET - Retrieving a specific contact by ID.
-    </figcaption>
-  </figure>
+          <!-- Database -->
+          <figure>
+            <a
+              href="demo/database.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="demo-image-link"
+              aria-label="View PostgreSQL screenshot in full size"
+            >
+              <img
+                src="demo/database.png"
+                alt="PostgreSQL database records"
+                loading="lazy"
+              />
+            </a>
 
-  <!-- Update -->
-  <figure>
-    <img
-      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/PUTreq.png"
-      alt="Postman PUT request"
-      loading="lazy"
-    />
-    <figcaption>
-      PUT - Updating existing contact information.
-    </figcaption>
-  </figure>
+            <figcaption>
+              PostgreSQL - Contact records stored in the database.
+            </figcaption>
+          </figure>
 
-  <!-- Delete -->
-  <figure>
-    <img
-      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/DELETEreq.png"
-      alt="Postman DELETE request"
-      loading="lazy"
-    />
-    <figcaption>
-      DELETE - Removing a contact from the database.
-    </figcaption>
-  </figure>
+          <!-- Get All -->
+          <figure>
+            <a
+              href="demo/getAll.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="demo-image-link"
+              aria-label="View GET all contacts screenshot in full size"
+            >
+              <img
+                src="demo/getAll.png"
+                alt="Postman GET all contacts request"
+                loading="lazy"
+              />
+            </a>
 
-  <!-- Verify Deletion -->
-  <figure>
-    <img
-      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/afterDelete.png"
-      alt="GET request after deleting a contact"
-      loading="lazy"
-    />
-    <figcaption>
-      Verification - Confirming the deleted contact no longer exists.
-    </figcaption>
-  </figure>
+            <figcaption>
+              GET - Retrieving all contacts from PostgreSQL.
+            </figcaption>
+          </figure>
 
-  <!-- Phone Validation -->
-  <figure>
-    <img
-      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/phoneNumber.png"
-      alt="Invalid phone number validation"
-      loading="lazy"
-    />
-    <figcaption>
-      Validation - Rejecting an invalid phone number.
-    </figcaption>
-  </figure>
+          <!-- Get By ID -->
+          <figure>
+            <a
+              href="demo/getById.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="demo-image-link"
+              aria-label="View GET by ID screenshot in full size"
+            >
+              <img
+                src="demo/getById.png"
+                alt="Postman GET contact by ID"
+                loading="lazy"
+              />
+            </a>
 
-  <!-- First Name Validation -->
-  <figure>
-    <img
-      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/validationFirstName.png"
-      alt="Invalid first name validation"
-      loading="lazy"
-    />
-    <figcaption>
-      Validation - Rejecting an invalid first name.
-    </figcaption>
-  </figure>
+            <figcaption>
+              GET - Retrieving a specific contact by ID.
+            </figcaption>
+          </figure>
 
-</div>
+          <!-- Update -->
+          <figure>
+            <a
+              href="demo/PUTreq.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="demo-image-link"
+              aria-label="View PUT request screenshot in full size"
+            >
+              <img
+                src="demo/PUTreq.png"
+                alt="Postman PUT request"
+                loading="lazy"
+              />
+            </a>
 
+            <figcaption>
+              PUT - Updating existing contact information.
+            </figcaption>
+          </figure>
 
+          <!-- Delete -->
+          <figure>
+            <a
+              href="demo/DELETEreq.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="demo-image-link"
+              aria-label="View DELETE request screenshot in full size"
+            >
+              <img
+                src="demo/DELETEreq.png"
+                alt="Postman DELETE request"
+                loading="lazy"
+              />
+            </a>
+
+            <figcaption>
+              DELETE - Removing a contact from the database.
+            </figcaption>
+          </figure>
+
+          <!-- Verify Deletion -->
+          <figure>
+            <a
+              href="demo/afterDelete.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="demo-image-link"
+              aria-label="View deletion verification screenshot in full size"
+            >
+              <img
+                src="demo/afterDelete.png"
+                alt="GET request after deleting a contact"
+                loading="lazy"
+              />
+            </a>
+
+            <figcaption>
+              Verification - Confirming the deleted contact no longer exists.
+            </figcaption>
+          </figure>
+
+          <!-- Phone Validation -->
+          <figure>
+            <a
+              href="demo/phoneNumber.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="demo-image-link"
+              aria-label="View phone validation screenshot in full size"
+            >
+              <img
+                src="demo/phoneNumber.png"
+                alt="Invalid phone number validation"
+                loading="lazy"
+              />
+            </a>
+
+            <figcaption>
+              Validation - Rejecting an invalid phone number.
+            </figcaption>
+          </figure>
+
+          <!-- First Name Validation -->
+          <figure>
+            <a
+              href="demo/validationFirstName.png"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="demo-image-link"
+              aria-label="View first name validation screenshot in full size"
+            >
+              <img
+                src="demo/validationFirstName.png"
+                alt="Invalid first name validation"
+                loading="lazy"
+              />
+            </a>
+
+            <figcaption>
+              Validation - Rejecting an invalid first name.
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
     </div>
   </section>
 }
+
 
 
   <!-- Enhancements Section -->
@@ -281,18 +364,23 @@
         stronger validation, and a more maintainable application structure.
       </p>
 
-      <button
-  type="button"
-  class="read-more"
-  (click)="openNarrative(1)"
->
-  Read Narrative ↗
-</button>
+<div class="narrative-links">
+  <button
+    type="button"
+    class="read-more"
+    (click)="openNarrative(1)"
+  >
+    Read Narrative ↗
+  </button>
 
-      <a href="https://github.com/JuanDev17/cs-320/blob/main/ContactService/public/narratives/narrative1.docx"
-        target="_blank" rel="noopener noreferrer" class="read-more">
-        Download Narrative ↗
-      </a>
+  <a
+    href="narratives/narrative1.docx"
+    download
+    class="read-more"
+  >
+    Download Narrative ↗
+  </a>
+</div>
     </div>
 
     <div class="enhancement-card">
@@ -306,18 +394,23 @@
         operations.
       </p>
 
-      <button
-  type="button"
-  class="read-more"
-  (click)="openNarrative(2)"
->
-  Read Narrative ↗
-</button>
+<div class="narrative-links">
+  <button
+    type="button"
+    class="read-more"
+    (click)="openNarrative(2)"
+  >
+    Read Narrative ↗
+  </button>
 
-      <a href="https://github.com/JuanDev17/cs-320/blob/main/ContactService/public/narratives/narrative2.docx"
-        target="_blank" rel="noopener noreferrer" class="read-more">
-        Download Narrative ↗
-      </a>
+  <a
+    href="narratives/narrative2.docx"
+    download
+    class="read-more"
+  >
+    Download Narrative ↗
+  </a>
+</div>
     </div>
 
     <div class="enhancement-card">
@@ -330,19 +423,23 @@
         Integrated PostgreSQL with Spring Boot and Spring Data JPA to provide persistent contact
         storage and support database CRUD operations.
       </p>
+<div class="narrative-links">
+  <button
+    type="button"
+    class="read-more"
+    (click)="openNarrative(3)"
+  >
+    Read Narrative ↗
+  </button>
 
-      <button
-  type="button"
-  class="read-more"
-  (click)="openNarrative(3)"
->
-  Read Narrative ↗
-</button>
-
-      <a href="https://github.com/JuanDev17/cs-320/blob/main/ContactService/public/narratives/narrative3.docx"
-        target="_blank" rel="noopener noreferrer" class="read-more">
-        Download Narrative ↗
-      </a>
+  <a
+    href="narratives/narrative3.docx"
+    download
+    class="read-more"
+  >
+    Download Narrative ↗
+  </a>
+</div>
     </div>
   </section>
   }
