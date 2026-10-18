@@ -1,4 +1,3 @@
-
 <header class="header">
   <div class="logo">
     <span>JA</span>
@@ -6,159 +5,568 @@
 
   <nav class="nav">
     @for (link of navLinks; track link.id) {
-      <button
-        type="button"
-        [class.active]="activeSelection() === link.id"
-        (click)="setActiveSelection(link.id)"
-      >
-        {{ link.label }}
-      </button>
+    <button type="button" [class.active]="activeSelection() === link.id" (click)="setActiveSelection(link.id)">
+      {{ link.label }}
+    </button>
     }
   </nav>
 </header>
 
 <main class="container">
-
   <!-- Hero Section -->
   @if (activeSelection() === 'home') {
-    <section class="hero">
-      <h1>Hi, I'm Juan Aviles</h1>
+  <section class="hero">
+    <h1>Hi, I'm Juan Aviles</h1>
 
-      <p>
-        I build user-friendly applications and enjoy solving
-        problems through software engineering.
-      </p>
+    <p>
+      I build user-friendly applications and enjoy solving problems through software engineering.
+    </p>
 
-      <button
-        type="button"
-        class="btn-primary"
-        (click)="setActiveSelection('projects')"
-      >
-        View My Work
-      </button>
-    </section>
+    <button type="button" class="btn-primary" (click)="setActiveSelection('projects')">
+      View My Work
+    </button>
+  </section>
   }
 
   <!-- About Section -->
   @if (activeSelection() === 'about') {
-    <section id="about" class="about">
-      <h2>About Me</h2>
+  <section id="about" class="about">
+    <h2>Professional Self-Assessment</h2>
 
-      <p>
-        Throughout my <b>Computer Science</b> program, one of the
-        biggest things I've learned is that <b>software engineering</b>
-        is much more than understanding syntax or knowing how to code
-        a feature. When I first started programming, my main focus
-        was getting my code to work and making sure the feature did
-        what it was supposed to do. As I continued through the
-        program, I began to realize how much <b>critical thinking</b>
-        goes into developing software. It's important to look at the
-        <b>bigger picture</b>, consider different <b>scenarios</b>,
-        anticipate <b>potential issues</b>, and understand how one
-        change can affect other parts of an application.
-      </p>
+    <p>
+      Throughout my <b>Computer Science</b> program, one of the biggest things I've learned is
+      that <b>software engineering</b> is much more than understanding syntax or knowing how to
+      code a feature. When I first started programming, my main focus was getting my code to work
+      and making sure the feature did what it was supposed to do. As I continued through the
+      program, I began to realize how much <b>critical thinking</b> goes into developing software.
+      It's important to look at the <b>bigger picture</b>, consider different <b>scenarios</b>,
+      anticipate <b>potential issues</b>, and understand how one change can affect other parts of
+      an application.
+    </p>
 
-      <p>
-        I've also learned that just because a solution works doesn't
-        necessarily mean it's the best solution. There are other
-        factors to consider, such as <b>performance</b>,
-        <b>security</b>, <b>maintainability</b>, and how easily the
-        application can <b>grow over time</b>. This has changed the
-        way I approach problems. Instead of immediately jumping into
-        writing code, I try to <b>understand the problem</b>, think
-        through possible solutions, and consider the advantages and
-        disadvantages of each approach.
-      </p>
+    <p>
+      I've also learned that just because a solution works doesn't necessarily mean it's the best
+      solution. There are other factors to consider, such as <b>performance</b>, <b>security</b>,
+      <b>maintainability</b>, and how easily the application can <b>grow over time</b>. This has
+      changed the way I approach problems. Instead of immediately jumping into writing code, I try
+      to <b>understand the problem</b>, think through possible solutions, and consider the
+      advantages and disadvantages of each approach.
+    </p>
 
-      <p>
-        Working on my CS-499 capstone helped reinforce this mindset.
-        By revisiting my original CS-320 Contact Management
-        application, I was able to look at code I had previously
-        written and identify areas that could be improved. Enhancing
-        the application through <b>software engineering</b>,
-        <b>algorithms and data structures</b>, and
-        <b>database integration</b> helped me better understand how
-        these different areas work together to create a more
-        <b>reliable</b> and <b>maintainable</b> application.
-      </p>
-    </section>
+    <p>
+      Throughout my coursework and my experience working as a <b>Software Engineer</b>, I've also
+      learned how important <b>collaboration and communication</b> are when developing
+      applications. Working with other developers and discussing requirements has helped me
+      understand that everyone approaches problems differently. My experience developing frontend
+      applications using <b>Angular and TypeScript</b> has also helped me improve my
+      problem-solving skills and understand the importance of writing maintainable code. Being
+      able to explain my ideas, ask questions, receive feedback, and communicate technical
+      information clearly is just as important as writing the code itself.
+    </p>
+
+    <p>
+      Another area where I've grown is my understanding of
+      <b> data structures and algorithms </b>. Earlier in the program, I didn't always consider
+      how choosing one data structure over another could affect application performance. As I
+      progressed, I learned how important it is to evaluate different approaches based on
+      efficiency, complexity, and the problem being solved. I've also gained experience working
+      with <b>relational databases</b>, including
+      <b>SQL and PostgreSQL</b>, to understand how
+      applications store, retrieve, and manage information. This has helped me become more
+      comfortable understanding how frontend applications interact with backend services and
+      databases.
+    </p>
+
+    <p>
+      <b>Security</b> is another area that has changed how I think about developing applications.
+      I've learned that protecting information should be considered throughout the development
+      process rather than something added at the end. This includes validating user input,
+      handling errors properly, and considering how vulnerabilities could affect users and their
+      information. As someone working in the financial industry, I understand how important it is
+      to build applications that are reliable and take security seriously.
+    </p>
+
+    <p>
+      Working on my CS-499 capstone helped reinforce this mindset. By revisiting my original
+      CS-320 Contact Management application, I was able to look at code I had previously written
+      and identify areas that could be improved. Enhancing the application through
+      <b>software engineering</b>, <b>algorithms and data structures</b>, and
+      <b>database integration</b> helped me better understand how these different areas work
+      together to create a more <b>reliable</b> and <b>maintainable</b> application.
+    </p>
+
+    <p>
+      Each enhancement represents a different part of my development throughout the program. The
+      <b>software engineering enhancement</b> focuses on improving the structure and validation of
+      the application. The <b>algorithms and data structures enhancement</b> demonstrates how
+      replacing an ArrayList with a HashMap can improve the efficiency of contact management
+      operations. Finally, the <b>database enhancement</b> introduces PostgreSQL, Spring Boot, and
+      Spring Data JPA to allow contact information to be stored persistently rather than being
+      lost when the application stops running. Together, these enhancements demonstrate how I can
+      evaluate an existing application, identify weaknesses, and apply what I've learned to
+      improve it.
+    </p>
+
+    <p>
+      As I complete my <b>Bachelor of Science in Computer Science</b>, my goal is to continue
+      growing as a software engineer and take on more responsibility in the applications I help
+      develop. I'm especially interested in building user-friendly applications, improving
+      application performance, and becoming more comfortable working across different parts of a
+      system. This program has helped me build a stronger technical foundation, improve my
+      problem-solving skills, and understand the importance of continuous learning in a field that
+      is always changing.
+    </p>
+  </section>
   }
 
-  <!-- Projects Section -->
-  @if (activeSelection() === 'projects') {
-    <section id="projects" class="projects">
-      <h2>Featured Project</h2>
+ 
+<!-- Projects Section -->
+@if (activeSelection() === 'projects') {
+  <section id="projects" class="projects">
+    <h2>Featured Project</h2>
 
-      <div class="project-card">
-        <span class="project">Contact Management System</span>
+    <div class="project-card">
+      <h3>Contact Management System</h3>
 
-        <p>JAVA • SPRING BOOT • POSTGRESQL • SPRING DATA JPA</p>
+      <p>JAVA • SPRING BOOT • POSTGRESQL • SPRING DATA JPA</p>
+
+      <p>
+        Originally developed during my CS-320 course, this application
+        allows users to create, update, delete, and manage contact
+        information. For my CS-499 capstone, I enhanced the application
+        to improve its structure, efficiency, and database integration.
+      </p>
+
+      <!-- Source Code Links -->
+      <div class="project-links">
+        <a
+          href="https://github.com/JuanDev17/cs-320/tree/original"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="read-more"
+        >
+          Original Code ↗
+        </a>
+
+        <a
+          href="https://github.com/JuanDev17/cs-320/tree/main"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="read-more"
+        >
+          Enhanced Code ↗
+        </a>
       </div>
-    </section>
-  }
+
+    
+<div class="demo-gallery">
+
+  <!-- Database -->
+  <figure>
+<img
+  src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/database.png"
+  alt="PostgreSQL database records"
+  loading="lazy"
+/>
+    <figcaption>
+      PostgreSQL - Contact records stored in the database.
+    </figcaption>
+  </figure>
+
+  <!-- Get All -->
+  <figure>
+    <img
+      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/getAll.png"
+      alt="Postman GET all contacts request"
+      loading="lazy"
+    />
+    <figcaption>
+      GET - Retrieving all contacts from PostgreSQL.
+    </figcaption>
+  </figure>
+
+  <!-- Get By ID -->
+  <figure>
+    <img
+      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/getById.png"
+      alt="Postman GET contact by ID"
+      loading="lazy"
+    />
+    <figcaption>
+      GET - Retrieving a specific contact by ID.
+    </figcaption>
+  </figure>
+
+  <!-- Update -->
+  <figure>
+    <img
+      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/PUTreq.png"
+      alt="Postman PUT request"
+      loading="lazy"
+    />
+    <figcaption>
+      PUT - Updating existing contact information.
+    </figcaption>
+  </figure>
+
+  <!-- Delete -->
+  <figure>
+    <img
+      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/DELETEreq.png"
+      alt="Postman DELETE request"
+      loading="lazy"
+    />
+    <figcaption>
+      DELETE - Removing a contact from the database.
+    </figcaption>
+  </figure>
+
+  <!-- Verify Deletion -->
+  <figure>
+    <img
+      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/afterDelete.png"
+      alt="GET request after deleting a contact"
+      loading="lazy"
+    />
+    <figcaption>
+      Verification - Confirming the deleted contact no longer exists.
+    </figcaption>
+  </figure>
+
+  <!-- Phone Validation -->
+  <figure>
+    <img
+      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/phoneNumber.png"
+      alt="Invalid phone number validation"
+      loading="lazy"
+    />
+    <figcaption>
+      Validation - Rejecting an invalid phone number.
+    </figcaption>
+  </figure>
+
+  <!-- First Name Validation -->
+  <figure>
+    <img
+      src="https://raw.githubusercontent.com/JuanDev17/cs-320/main/ContactService/public/demo/validationFirstName.png"
+      alt="Invalid first name validation"
+      loading="lazy"
+    />
+    <figcaption>
+      Validation - Rejecting an invalid first name.
+    </figcaption>
+  </figure>
+
+</div>
+
+
+    </div>
+  </section>
+}
+
 
   <!-- Enhancements Section -->
   @if (activeSelection() === 'enhancements') {
-    <section id="enhancements" class="enhancements">
-      <h2>Enhancements</h2>
+  <section id="enhancements" class="enhancements">
+    <h2>Enhancements</h2>
 
-      <div class="enhancement-card">
-        <span class="card-design">
-          Software Design and Engineering
-          <mat-icon>code</mat-icon>
-        </span>
+    <div class="enhancement-card">
+      <span class="card-design">
+        Software Design and Engineering
+        <mat-icon>code</mat-icon>
+      </span>
 
-        <p>
-          Improved the original Contact Management application by
-          introducing a service layer, stronger validation, and
-          a more maintainable application structure.
-        </p>
+      <p>
+        Improved the original Contact Management application by introducing a service layer,
+        stronger validation, and a more maintainable application structure.
+      </p>
 
-        <a href="#" class="read-more">
-          Read Narrative
-        </a>
-      </div>
+      <button
+  type="button"
+  class="read-more"
+  (click)="openNarrative(1)"
+>
+  Read Narrative ↗
+</button>
 
-      <div class="enhancement-card">
-        <span class="card-design">
-          Algorithms and Data Structures
-          <mat-icon>account_tree</mat-icon>
-        </span>
+      <a href="https://github.com/JuanDev17/cs-320/blob/main/ContactService/public/narratives/narrative1.docx"
+        target="_blank" rel="noopener noreferrer" class="read-more">
+        Download Narrative ↗
+      </a>
+    </div>
 
-        <p>
-          Replaced ArrayList with HashMap to improve the efficiency
-          of contact lookup and management operations.
-        </p>
+    <div class="enhancement-card">
+      <span class="card-design">
+        Algorithms and Data Structures
+        <mat-icon>account_tree</mat-icon>
+      </span>
 
-        <a href="#" class="read-more">
-          Read Narrative
-        </a>
-      </div>
+      <p>
+        Replaced ArrayList with HashMap to improve the efficiency of contact lookup and management
+        operations.
+      </p>
 
-      <div class="enhancement-card">
-        <span class="card-design">
-          Database Design
-          <mat-icon>storage</mat-icon>
-        </span>
+      <button
+  type="button"
+  class="read-more"
+  (click)="openNarrative(2)"
+>
+  Read Narrative ↗
+</button>
 
-        <p>
-          Integrated PostgreSQL with Spring Boot and Spring Data JPA
-          to provide persistent contact storage and support
-          database CRUD operations.
-        </p>
+      <a href="https://github.com/JuanDev17/cs-320/blob/main/ContactService/public/narratives/narrative2.docx"
+        target="_blank" rel="noopener noreferrer" class="read-more">
+        Download Narrative ↗
+      </a>
+    </div>
 
-        <a href="#" class="read-more">
-          Read Narrative
-        </a>
-      </div>
-    </section>
+    <div class="enhancement-card">
+      <span class="card-design">
+        Database Design
+        <mat-icon>storage</mat-icon>
+      </span>
+
+      <p>
+        Integrated PostgreSQL with Spring Boot and Spring Data JPA to provide persistent contact
+        storage and support database CRUD operations.
+      </p>
+
+      <button
+  type="button"
+  class="read-more"
+  (click)="openNarrative(3)"
+>
+  Read Narrative ↗
+</button>
+
+      <a href="https://github.com/JuanDev17/cs-320/blob/main/ContactService/public/narratives/narrative3.docx"
+        target="_blank" rel="noopener noreferrer" class="read-more">
+        Download Narrative ↗
+      </a>
+    </div>
+  </section>
   }
 
-  <!-- Contact Section -->
-  @if (activeSelection() === 'contact') {
-    <section id="contact" class="contact">
-      <h2>Contact</h2>
-    </section>
-  }
+<!-- Contact Section -->
+@if (activeSelection() === 'contact') {
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <p>
+      Thank you for taking the time to explore my portfolio.
+      Feel free to connect with me or explore more of my work.
+    </p>
+
+    <div class="project-links">
+      <a
+        href="https://github.com/JuanDev17"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="read-more"
+      >
+        GitHub ↗
+      </a>
+    </div>
+  </section>
+}
+
+
+
+<!-- Narrative Details Section -->
+@if (activeSelection() === 'narrative') {
+  <section class="narrative">
+
+    <button
+      type="button"
+      class="read-more"
+      (click)="backToEnhancements()"
+    >
+      ← Back to Enhancements
+    </button>
+
+    <!-- Enhancement One -->
+    @if (selectedNarrative() === 1) {
+      <h2>Software Design and Engineering</h2>
+
+      <h3>Artifact Description</h3>
+      <p>
+        The artifact I've selected for my software engineering and design
+        enhancement is a Contact Management application. This project was
+        originally created in CS-320, Software Testing, Automation, and
+        Quality Assurance. The application allows contact information
+        to be created, updated, and deleted. Each contact contains an
+        ID, first name, last name, address, and phone number.
+        The application was developed in Java and tested with JUnit.
+      </p>
+
+      <h3>Enhancements and Skills Demonstrated</h3>
+      <p>
+        Selecting this artifact allowed me to demonstrate my skills
+        in Java, object-oriented programming, validation, and testing.
+        While reviewing my original code, I noticed areas that could
+        be improved, especially when handling invalid information.
+        I created reusable validation methods and improved how
+        the application handles input. The application now checks
+        for blank values, and phone numbers must contain exactly
+        10 numeric digits.
+      </p>
+
+      <p>
+        Making these enhancements also required me to update my
+        JUnit tests. Before the enhancements, I had 31 passing tests.
+        After expanding the test coverage, I now have 38 passing
+        tests with no failures. This helped confirm that the
+        changes were working as expected.
+      </p>
+
+      <h3>Course Outcomes</h3>
+      <p>
+        These enhancements demonstrate my progress toward the course
+        outcomes by improving validation, implementing solutions,
+        checking for duplicate contacts, and testing application
+        functionality. They also helped me demonstrate how
+        software engineering practices can improve the
+        reliability and maintainability of an application.
+      </p>
+
+      <h3>Reflection</h3>
+      <p>
+        Making changes to this artifact taught me that the order
+        of validation matters and that repeated code should be
+        avoided when possible. I was concerned about breaking
+        existing functionality while introducing reusable
+        validation methods, but running my JUnit tests helped
+        confirm that the application continued working.
+      </p>
+    }
+
+    <!-- Enhancement Two -->
+    @if (selectedNarrative() === 2) {
+      <h2>Algorithms and Data Structures</h2>
+
+      <h3>Artifact Description</h3>
+      <p>
+        For this enhancement, I revisited my Contact Management
+        application from CS-320, Software Testing, Automation,
+        and Quality Assurance. The application was developed
+        in Java and allows contacts to be created, updated,
+        searched, and deleted. Originally, I stored contacts
+        using an ArrayList.
+      </p>
+
+      <h3>Enhancements and Skills Demonstrated</h3>
+      <p>
+        Reviewing this application allowed me to identify
+        weaknesses in my original approach and demonstrate
+        my understanding of algorithms and data structures.
+        I replaced the ArrayList with a HashMap, using the
+        Contact ID as the key and the Contact object as the value.
+      </p>
+
+      <p>
+        With an ArrayList, the application would loop through
+        the contacts to find a matching ID. Using a HashMap
+        improves lookup operations from O(n) to O(1) on average.
+        I was also able to use methods such as get(), put(),
+        remove(), and containsKey() to manage contact information
+        more efficiently.
+      </p>
+
+      <h3>Course Outcomes</h3>
+      <p>
+        This enhancement demonstrates my progress toward the
+        course outcome of designing and evaluating computing
+        solutions using algorithmic principles. I considered
+        the advantages and disadvantages of different data
+        structures before deciding which approach worked
+        best for the application.
+      </p>
+
+      <h3>Reflection</h3>
+      <p>
+        This enhancement encouraged me to look deeper into
+        the differences between ArrayLists and HashMaps.
+        I learned how choosing a different data structure
+        can affect the efficiency and overall behavior
+        of an application. After making the changes,
+        I ran the tests to confirm that the existing
+        functionality continued working correctly.
+      </p>
+    }
+
+    <!-- Enhancement Three -->
+    @if (selectedNarrative() === 3) {
+      <h2>Database Design</h2>
+
+      <h3>Artifact Description</h3>
+      <p>
+        The artifact I selected for my database enhancement
+        is the Contact Management application originally created
+        in CS-320, Software Testing, Automation, and Quality Assurance.
+        The application allows contacts to be added, updated,
+        deleted, and searched. Originally, contact information
+        was stored in memory, meaning the data would be lost
+        when the application stopped running.
+      </p>
+
+      <h3>Enhancements and Skills Demonstrated</h3>
+      <p>
+        Choosing this artifact gave me the opportunity to demonstrate
+        my ability to improve an existing application by integrating
+        a database. I decided to use PostgreSQL with Spring Boot
+        and Spring Data JPA. I converted the Contact class into
+        a JPA entity using @Entity and created a repository
+        to manage database operations.
+      </p>
+
+      <p>
+        I also updated the service logic to communicate with
+        the database repository rather than storing contacts
+        in memory. This allowed me to demonstrate my skills
+        working with PostgreSQL, relational databases,
+        Spring Data JPA, and CRUD operations.
+      </p>
+
+      <h3>Course Outcomes</h3>
+      <p>
+        My approach was slightly different from my original plan.
+        Instead of using a regular Java database connection,
+        I chose Spring Data JPA with PostgreSQL. This provided
+        a more structured approach to connecting the application
+        to a database.
+      </p>
+
+      <p>
+        JPA also reduces the amount of repetitive SQL and
+        connection code needed for common database operations.
+        By keeping the database logic separate from the service
+        logic, I made the application easier to maintain
+        and expand.
+      </p>
+
+      <h3>Reflection</h3>
+      <p>
+        This enhancement gave me a better understanding of
+        how the different application layers work together.
+        One challenge I faced was ensuring that the existing
+        functionality continued working while updating
+        the application to use a database repository.
+      </p>
+
+      <p>
+        I also encountered issues when setting up Spring Boot
+        and PostgreSQL. Overall, this enhancement improved
+        my understanding of connecting an existing Java
+        application to a relational database and managing
+        persistent data.
+      </p>
+    }
+
+  </section>
+}
+
+
+
+
 
 </main>

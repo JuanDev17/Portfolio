@@ -10,7 +10,8 @@ import { CommonModule } from '@angular/common';
 })
 export class App {
  activeSelection = signal('about');
-
+  selectedNarrative = signal<number | null>(null);
+  
   navLinks = [ 
     { label: 'Home', id: 'home' },
     { label: 'About', id: 'about' },
@@ -23,4 +24,18 @@ export class App {
     this.activeSelection.set(select);
   }
 
+
+
+
+openNarrative(id: number): void {
+  this.selectedNarrative.set(id);
+  this.setActiveSelection('narrative');
 }
+
+backToEnhancements(): void {
+  this.selectedNarrative.set(null);
+  this.setActiveSelection('enhancements');
+}
+
+}
+
